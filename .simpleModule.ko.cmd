@@ -1,0 +1,1 @@
+cmd_/home/sj/projects/kernel-driver/simpleModule.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/sj/projects/kernel-driver/simpleModule.ko /home/sj/projects/kernel-driver/simpleModule.o /home/sj/projects/kernel-driver/simpleModule.mod.o;  true

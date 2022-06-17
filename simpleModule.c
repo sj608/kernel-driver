@@ -4,18 +4,17 @@
 
 
 // Constructor
-static int _init hello_world_init(void)
+static int __init hello_world_init(void)
 {
     printk(KERN_INFO "Welcome to your first tutorial\n");
     printk(KERN_INFO "This is your first simple module\n");
     printk(KERN_INFO "Are you excited?\n");
-
     return 0;
 }
 // Destructor
-static int _exit hello_world_exit(void)
+static void __exit hello_world_exit(void)
 {
-    printk(KERN_INFO "Thanks for play\n")
+    printk(KERN_INFO "Thanks for play\n");
 }
 
 module_exit(hello_world_exit);
